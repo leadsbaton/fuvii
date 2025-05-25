@@ -86,7 +86,7 @@ Click OK to proceed.`
         // Trigger file download
         const link = document.createElement("a");
         link.href = "https://leadsbaton.github.io/fuvii/assets/pdf/fuvii_1.pdf";
-        link.download = "Ebook1.pdf";
+        link.download = "fuvii.pdf";
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
