@@ -1,657 +1,744 @@
-
-
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fuvii - Grow Your Restaurant for "FREE"</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'fuvii-green': '#4ade80',
-                        'fuvii-dark-green': '#22c55e',
-                    }
-                }
-            }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fuvii - Grow Your Restaurant for "FREE"</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script type="module" src="assets/js/script.js"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'fuvii-green': '#4ade80',
+            'fuvii-dark-green': '#22c55e',
+          }
         }
-    </script>
+      }
+    }
+  </script>
 </head>
+
 <body class="bg-white">
-    <!-- Hero Section -->
-    <section class="relative min-h-screen bg-black text-white">
-        <div class="absolute inset-0">
-            <img src="assets/images/header_bg.af53da94.jpg" alt="Restaurant dining scene" class="w-full h-full object-cover opacity-70">
-            <div class="absolute inset-0 bg-black bg-opacity-40"></div>
-        </div>
-        
-        <div class="relative z-10 container mx-auto px-4 py-8">
-            <!-- Header -->
-            <div class="text-center mb-8">
-                <h1 class="text-2xl md:text-3xl font-bold mb-2">Fuvii - Grow Your Restaurant for "FREE"</h1>
-            </div>
-            
-            <!-- Logo -->
-            <div class="flex justify-center mb-12">
-                <div class="text-4xl md:text-6xl font-bold text-white">
-                    fuvii
-                </div>
-            </div>
-            
-            <!-- Main Headlines -->
-            <div class="max-w-4xl mx-auto text-center mb-12">
-                <h2 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-                    Stop Paying High<br>
-                    Commissions
-                </h2>
-                <h3 class="text-2xl md:text-4xl lg:text-5xl font-semibold mb-8 text-fuvii-green">
-                    Start Owning Your Customer<br>
-                    Relationships
-                </h3>
-            </div>
-            
-            <!-- Problem Statement Box -->
-            <div class="max-w-2xl mx-auto bg-white bg-opacity-95 rounded-lg p-6 md:p-8 text-gray-800 mb-8">
-                <div class="text-center mb-6">
-                    <p class="text-lg md:text-xl font-medium mb-4">Why give up 25-30% of every order and 100% of your customer data?</p>
-                    <p class="text-base md:text-lg font-medium">Most restaurant owners miss this:</p>
-                </div>
-                
-                <div class="space-y-4">
-                    <div class="flex items-start space-x-3">
-                        <span class="text-red-500 text-xl font-bold">✗</span>
-                        <span class="text-base md:text-lg">No access to customer data</span>
-                    </div>
-                    <div class="flex items-start space-x-3">
-                        <span class="text-red-500 text-xl font-bold">✗</span>
-                        <span class="text-base md:text-lg">No way to follow up or build loyalty</span>
-                    </div>
-                    <div class="flex items-start space-x-3">
-                        <span class="text-red-500 text-xl font-bold">✗</span>
-                        <span class="text-base md:text-lg">No way to No control over your own success</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- Hero Section -->
+  <section class="relative min-h-screen bg-black text-white">
+    <div class="absolute inset-0">
+      <img src="assets/images/header_bg.af53da94.jpg" alt="Restaurant dining scene"
+        class="w-full h-full object-cover opacity-70">
+      <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+    </div>
 
-    <!-- Problem Section -->
-    <section class="bg-gray-50 py-12 md:py-16">
-        <div class="container mx-auto px-4">
-            <div class="max-w-4xl mx-auto">
-                <div class="text-center mb-8">
-                    <p class="text-xl md:text-2xl font-semibold text-gray-800 mb-6">Every time a customer orders through a third-party app,</p>
-                    
-                    <div class="space-y-4">
-                        <div class="flex items-center justify-center space-x-3">
-                            <span class="text-red-500 text-xl font-bold">✗</span>
-                            <span class="text-lg md:text-xl text-fuvii-green font-medium">You're not just losing profit</span>
-                        </div>
-                        <div class="flex items-center justify-center space-x-3">
-                            <span class="text-red-500 text-xl font-bold">✗</span>
-                            <span class="text-lg md:text-xl text-fuvii-green font-medium">You're losing the relationship</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div class="relative z-10 container mx-auto px-4 py-8">
+      <!-- Header -->
+      <div class="text-center mb-8">
+        <h1 class="text-2xl md:text-3xl font-bold mb-2">Fuvii - Grow Your Restaurant for "FREE"</h1>
+      </div>
 
-    <!-- Solution Section -->
-    <section class="bg-white py-12 md:py-16">
-        <div class="container mx-auto px-4">
-            <div class="max-w-6xl mx-auto">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-fuvii-green mb-4">Fuvii changes everything</h2>
-                    <p class="text-lg md:text-xl text-gray-700 font-medium">A complete, commission free system built to grow your business - not reduce your profit</p>
-                </div>
-                
-                <div class="mb-12">
-                    <h3 class="text-2xl md:text-3xl font-bold text-fuvii-green mb-8">With Fuvii, You Get:</h3>
-                    
-                    <div class="grid md:grid-cols-2 gap-6 lg:gap-8">
-                        <div class="space-y-6">
-                            <div class="flex items-start space-x-4">
-                                <span class="text-fuvii-green text-xl font-bold">✓</span>
-                                <div>
-                                    <h4 class="text-lg md:text-xl font-bold text-gray-800 mb-2">Direct orders</h4>
-                                    <p class="text-gray-600">For Dine-in, Takeaway & Delivery - via your website, QR code, and Fuvii app</p>
-                                </div>
-                            </div>
-                            
-                            <div class="flex items-start space-x-4">
-                                <span class="text-fuvii-green text-xl font-bold">✓</span>
-                                <div>
-                                    <h4 class="text-lg md:text-xl font-bold text-gray-800 mb-2">Just ₹1 per order</h4>
-                                    <p class="text-gray-600">Flat fee, no hidden cuts</p>
-                                </div>
-                            </div>
-                            
-                            <div class="flex items-start space-x-4">
-                                <span class="text-fuvii-green text-xl font-bold">✓</span>
-                                <div>
-                                    <h4 class="text-lg md:text-xl font-bold text-gray-800 mb-2">Full customer data</h4>
-                                    <p class="text-gray-600">Phone numbers, order history, visit patterns</p>
-                                </div>
-                            </div>
-                            
-                            <div class="flex items-start space-x-4">
-                                <span class="text-fuvii-green text-xl font-bold">✓</span>
-                                <div>
-                                    <h4 class="text-lg md:text-xl font-bold text-gray-800 mb-2">Built-in marketing tools</h4>
-                                    <p class="text-gray-600">Send SMS/WhatsApp offers in clicks</p>
-                                </div>
-                            </div>
-                            
-                            <div class="flex items-start space-x-4">
-                                <span class="text-fuvii-green text-xl font-bold">✓</span>
-                                <div>
-                                    <h4 class="text-lg md:text-xl font-bold text-gray-800 mb-2">Loyalty & Rewards</h4>
-                                    <p class="text-gray-600">Turn first-time visitors into regulars</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="flex items-center justify-center">
-                            <div class="border-2 border-dashed border-gray-400 rounded-lg p-6 md:p-8 text-center">
-                                <h4 class="text-xl md:text-2xl font-bold text-gray-800 mb-2">The Complete</h4>
-                                <h4 class="text-xl md:text-2xl font-bold text-gray-800">₹1 Solution</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="mb-12">
-                    <div class="space-y-6">
-                        <div class="flex items-start space-x-4">
-                            <span class="text-fuvii-green text-xl font-bold">✓</span>
-                            <div>
-                                <h4 class="text-lg md:text-xl font-bold text-gray-800 mb-2">Referral & Review Engine</h4>
-                                <p class="text-gray-600">Drive word of mouth, automatically</p>
-                            </div>
-                        </div>
-                        
-                        <div class="flex items-start space-x-4">
-                            <span class="text-fuvii-green text-xl font-bold">✓</span>
-                            <div>
-                                <h4 class="text-lg md:text-xl font-bold text-gray-800 mb-2">One Smart Dashboard</h4>
-                                <p class="text-gray-600">Manage everything in one place</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="text-center mb-8">
-                    <h3 class="text-2xl md:text-3xl font-bold text-fuvii-green mb-4">Fuvii isn't just software</h3>
-                    
-                    <div class="grid md:grid-cols-2 gap-4 max-w-4xl mx-auto mb-8">
-                        <div class="flex items-center space-x-3">
-                            <span class="text-fuvii-green text-xl font-bold">✓</span>
-                            <span class="text-lg font-medium text-gray-800">It's your growth engine</span>
-                        </div>
-                        <div class="flex items-center space-x-3">
-                            <span class="text-fuvii-green text-xl font-bold">✓</span>
-                            <span class="text-lg font-medium text-gray-800">You get the order</span>
-                        </div>
-                        <div class="flex items-center space-x-3">
-                            <span class="text-fuvii-green text-xl font-bold">✓</span>
-                            <span class="text-lg font-medium text-gray-800">You keep the customer</span>
-                        </div>
-                        <div class="flex items-center space-x-3">
-                            <span class="text-fuvii-green text-xl font-bold">✓</span>
-                            <span class="text-lg font-medium text-gray-800">You control the journey</span>
-                        </div>
-                    </div>
-                    
-                    <p class="text-lg md:text-xl text-gray-700 font-medium mb-8">Built for restaurant owners who want more control, more profits, and more return customers</p>
-                    
-                    <button class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-lg text-lg transition duration-300">
-                        Sign up Now for "FREE"
-                    </button>
-                </div>
-            </div>
+      <!-- Logo -->
+      <div class="flex justify-center mb-12">
+        <div class="text-4xl md:text-6xl font-bold text-white">
+          fuvii
         </div>
-    </section>
+      </div>
 
-    <!-- Features Section -->
-    <section class="bg-gray-50 py-12 md:py-16">
-        <div class="container mx-auto px-4">
-            <div class="max-w-6xl mx-auto">
-                <!-- Features Header -->
-                <div class="bg-fuvii-green text-white py-4 px-6 mb-8 transform -skew-x-12">
-                    <h2 class="text-xl md:text-2xl font-bold transform skew-x-12">FUVII FEATURES FOR RESTAURANTS</h2>
-                </div>
-                
-                <!-- Features Grid -->
-                <div class="grid md:grid-cols-2 gap-6 lg:gap-8 mb-12">
-                    <div class="space-y-6">
-                        <div class="flex items-start space-x-4">
-                            <span class="text-fuvii-green text-xl font-bold">✓</span>
-                            <span class="text-lg font-medium text-gray-800">Interactive-Ordering & Checkout</span>
-                        </div>
-                        <div class="flex items-start space-x-4">
-                            <span class="text-fuvii-green text-xl font-bold">✓</span>
-                            <span class="text-lg font-medium text-gray-800">Smart Upselling with AI</span>
-                        </div>
-                        <div class="flex items-start space-x-4">
-                            <span class="text-fuvii-green text-xl font-bold">✓</span>
-                            <span class="text-lg font-medium text-gray-800">Customer Reports & Insights</span>
-                        </div>
-                        <div class="flex items-start space-x-4">
-                            <span class="text-fuvii-green text-xl font-bold">✓</span>
-                            <span class="text-lg font-medium text-gray-800">Your Brand Online Ordering page</span>
-                        </div>
-                        <div class="flex items-start space-x-4">
-                            <span class="text-fuvii-green text-xl font-bold">✓</span>
-                            <span class="text-lg font-medium text-gray-800">Referral Program</span>
-                        </div>
-                        <div class="flex items-start space-x-4">
-                            <span class="text-fuvii-green text-xl font-bold">✓</span>
-                            <span class="text-lg font-medium text-gray-800">Table Reservation</span>
-                        </div>
-                        <div class="flex items-start space-x-4">
-                            <span class="text-fuvii-green text-xl font-bold">✓</span>
-                            <span class="text-lg font-medium text-gray-800">Fuvii for All Order Types</span>
-                        </div>
-                    </div>
-                    
-                    <div class="space-y-6">
-                        <div class="flex items-start space-x-4">
-                            <span class="text-fuvii-green text-xl font-bold">✓</span>
-                            <span class="text-lg font-medium text-gray-800">SMS & WhatsApp Campaigns</span>
-                        </div>
-                        <div class="flex items-start space-x-4">
-                            <span class="text-fuvii-green text-xl font-bold">✓</span>
-                            <span class="text-lg font-medium text-gray-800">Loyalty Program</span>
-                        </div>
-                        <div class="flex items-start space-x-4">
-                            <span class="text-fuvii-green text-xl font-bold">✓</span>
-                            <span class="text-lg font-medium text-gray-800">Feedback Module</span>
-                        </div>
-                        <div class="flex items-start space-x-4">
-                            <span class="text-fuvii-green text-xl font-bold">✓</span>
-                            <span class="text-lg font-medium text-gray-800">Bill Boost Module</span>
-                        </div>
-                        <div class="flex items-start space-x-4">
-                            <span class="text-fuvii-green text-xl font-bold">✓</span>
-                            <span class="text-lg font-medium text-gray-800">Customer Reviews</span>
-                        </div>
-                        <div class="flex items-start space-x-4">
-                            <span class="text-fuvii-green text-xl font-bold">✓</span>
-                            <span class="text-lg font-medium text-gray-800">Wait Queue Management</span>
-                        </div>
-                        <div class="flex items-start space-x-4">
-                            <span class="text-fuvii-green text-xl font-bold">✓</span>
-                            <span class="text-lg font-medium text-gray-800">Daily Online Settlements</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Feature Details -->
-                <div class="grid md:grid-cols-2 gap-8 mb-12">
-                    <div class="space-y-8">
-                        <div>
-                            <div class="flex items-start space-x-4 mb-3">
-                                <span class="text-fuvii-green text-xl font-bold">✓</span>
-                                <h4 class="text-lg md:text-xl font-bold text-gray-800">Interactive-Ordering & Checkout</h4>
-                            </div>
-                            <p class="text-gray-600 ml-8">Let customers scan your QR code to instantly browse and order from your digital menu. Both staff and customers can add, edit, or remove items in real time.</p>
-                        </div>
-                        
-                        <div>
-                            <div class="flex items-start space-x-4 mb-3">
-                                <span class="text-fuvii-green text-xl font-bold">✓</span>
-                                <h4 class="text-lg md:text-xl font-bold text-gray-800">SMS & WhatsApp Campaigns</h4>
-                            </div>
-                            <p class="text-gray-600 ml-8">Reach your customers directly with proven SMS and WhatsApp marketing tools. Choose from flexible templates that help you bring more customers</p>
-                        </div>
-                        
-                        <div>
-                            <div class="flex items-start space-x-4 mb-3">
-                                <span class="text-fuvii-green text-xl font-bold">✓</span>
-                                <h4 class="text-lg md:text-xl font-bold text-gray-800">Smart Upselling with AI</h4>
-                            </div>
-                            <p class="text-gray-600 ml-8">Fuvii automatically suggests popular add-ons and combos to increase average order value no extra work needed from staff</p>
-                        </div>
-                    </div>
-                    
-                    <div class="space-y-8">
-                        <div>
-                            <div class="flex items-start space-x-4 mb-3">
-                                <span class="text-fuvii-green text-xl font-bold">✓</span>
-                                <h4 class="text-lg md:text-xl font-bold text-gray-800">Fuvii For All Order Types</h4>
-                            </div>
-                            <p class="text-gray-600 ml-8">Customers can Dine-In, Takeaway, or get Delivery all through Fuvii</p>
-                        </div>
-                        
-                        <div>
-                            <div class="flex items-start space-x-4 mb-3">
-                                <span class="text-fuvii-green text-xl font-bold">✓</span>
-                                <h4 class="text-lg md:text-xl font-bold text-gray-800">Your Brand Online page</h4>
-                            </div>
-                            <p class="text-gray-600 ml-8">Fuvii gives you a custom brand page where customers can order - dine-in or takeaway. More orders, more reach.</p>
-                        </div>
-                        
-                        <div>
-                            <div class="flex items-start space-x-4 mb-3">
-                                <span class="text-fuvii-green text-xl font-bold">✓</span>
-                                <h4 class="text-lg md:text-xl font-bold text-gray-800">Bill Boost Module</h4>
-                            </div>
-                            <p class="text-gray-600 ml-8">Display special offers at checkout to encourage larger orders and increase revenue per customer</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+      <!-- Main Headlines -->
+      <div class="max-w-4xl mx-auto text-center mb-12">
+        <h2 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+          Stop Paying High<br>
+          Commissions
+        </h2>
+        <h3 class="text-2xl md:text-4xl lg:text-5xl font-semibold mb-8 text-fuvii-green">
+          Start Owning Your Customer<br>
+          Relationships
+        </h3>
+      </div>
 
-    <!-- QR Demo Section -->
-    <section class="bg-white py-12 md:py-16">
-        <div class="container mx-auto px-4">
-            <div class="max-w-6xl mx-auto">
-                <div class="border-2 border-dashed border-gray-400 rounded-lg p-8 mb-12">
-                    <h2 class="text-2xl md:text-3xl font-bold text-fuvii-green text-center mb-8">Try Fuvii for yourself: Scan Demo QR Code</h2>
-                    
-                    <div class="grid md:grid-cols-3 gap-8">
-                        <div class="text-center">
-                            <div class="border-2 border-fuvii-green rounded-lg p-4 mb-4 inline-block">
-                                <div class="w-32 h-32 bg-gray-200 flex items-center justify-center">
-                                    <span class="text-xs text-gray-500">QR Code Placeholder</span>
-                                </div>
-                            </div>
-                            <h4 class="text-lg font-semibold text-fuvii-green">Dine-in Table QR</h4>
-                        </div>
-                        
-                        <div class="text-center">
-                            <div class="border-2 border-fuvii-green rounded-lg p-4 mb-4 inline-block">
-                                <div class="w-32 h-32 bg-gray-200 flex items-center justify-center">
-                                    <span class="text-xs text-gray-500">QR Code Placeholder</span>
-                                </div>
-                            </div>
-                            <h4 class="text-lg font-semibold text-fuvii-green">Takeout / Delivery QR</h4>
-                        </div>
-                        
-                        <div class="text-center">
-                            <div class="border-2 border-fuvii-green rounded-lg p-4 mb-4 inline-block">
-                                <div class="w-32 h-32 bg-gray-200 flex items-center justify-center">
-                                    <span class="text-xs text-gray-500">QR Code Placeholder</span>
-                                </div>
-                            </div>
-                            <h4 class="text-lg font-semibold text-fuvii-green">Store Page QR</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <!-- Problem Statement Box -->
+      <div class="max-w-2xl mx-auto bg-white bg-opacity-95 rounded-lg p-6 md:p-8 text-gray-800 mb-8">
+        <div class="text-center mb-6">
+          <p class="text-lg md:text-xl font-medium mb-4">Why give up 25-30% of every order and 100% of your customer
+            data?</p>
+          <p class="text-base md:text-lg font-medium">Most restaurant owners miss this:</p>
         </div>
-    </section>
 
-    <!-- Pricing Section -->
-    <section class="bg-gray-900 text-white py-12 md:py-16">
-        <div class="container mx-auto px-4">
-            <div class="max-w-6xl mx-auto">
-                <h2 class="text-2xl md:text-3xl font-bold text-center mb-8">Pricing: Small Cost. Big Features. No Risk.</h2>
-                
-                <div class="grid md:grid-cols-2 gap-0 mb-8">
-                    <div class="bg-fuvii-green p-6 md:p-8">
-                        <h3 class="text-2xl md:text-3xl font-bold mb-4">Free plan ₹0</h3>
-                        <p class="text-lg mb-2">The restaurant pays <span class="font-bold">zero platform fee</span>. Platform fee of</p>
-                        <p class="text-lg">₹1 per order is paid by the customer/diner</p>
-                    </div>
-                    
-                    <div class="bg-fuvii-dark-green p-6 md:p-8">
-                        <h3 class="text-2xl md:text-3xl font-bold mb-4">Paid plan ₹1 / order</h3>
-                        <p class="text-lg mb-2">Restaurant pays the platform fee of ₹1 per order. No</p>
-                        <p class="text-lg">charges for Customers / diner</p>
-                    </div>
-                </div>
-                
-                <!-- Features Comparison Table -->
-                <div class="bg-white text-gray-800 rounded-lg overflow-hidden">
-                    <div class="grid grid-cols-3 gap-0">
-                        <div class="p-4 font-bold border-b border-gray-200">Features</div>
-                        <div class="p-4 font-bold text-center border-b border-l border-gray-200">Free plan ₹0</div>
-                        <div class="p-4 font-bold text-center border-b border-l border-gray-200">Paid plan ₹1 / order</div>
-                    </div>
-                    
-                    <div class="divide-y divide-gray-200">
-                        <div class="grid grid-cols-3 gap-0">
-                            <div class="p-4">
-                                <h4 class="font-semibold mb-2">Interactive-Ordering & Checkout</h4>
-                                <p class="text-sm text-gray-600">Let customers scan your QR code to instantly browse and order from your digital menu. Both staff and customers can add, edit, or remove items in real time.</p>
-                            </div>
-                            <div class="p-4 text-center border-l border-gray-200">
-                                <span class="text-fuvii-green text-2xl">✓</span>
-                            </div>
-                            <div class="p-4 text-center border-l border-gray-200">
-                                <span class="text-fuvii-green text-2xl">✓</span>
-                            </div>
-                        </div>
-                        
-                        <div class="grid grid-cols-3 gap-0">
-                            <div class="p-4">
-                                <h4 class="font-semibold mb-2">Fuvii For All Order Types</h4>
-                                <p class="text-sm text-gray-600">Customers can Dine-In, Takeaway, or get Delivery all through Fuvii</p>
-                            </div>
-                            <div class="p-4 text-center border-l border-gray-200">
-                                <span class="text-fuvii-green text-2xl">✓</span>
-                            </div>
-                            <div class="p-4 text-center border-l border-gray-200">
-                                <span class="text-fuvii-green text-2xl">✓</span>
-                            </div>
-                        </div>
-                        
-                        <div class="grid grid-cols-3 gap-0">
-                            <div class="p-4">
-                                <h4 class="font-semibold mb-2">SMS & WhatsApp Campaigns</h4>
-                                <p class="text-sm text-gray-600">Reach your customers directly with proven SMS and WhatsApp marketing tools. Choose from flexible templates that help you bring more customers</p>
-                            </div>
-                            <div class="p-4 text-center border-l border-gray-200">
-                                <span class="text-fuvii-green text-2xl">✓</span>
-                            </div>
-                            <div class="p-4 text-center border-l border-gray-200">
-                                <span class="text-fuvii-green text-2xl">✓</span>
-                            </div>
-                        </div>
-                        
-                        <div class="grid grid-cols-3 gap-0">
-                            <div class="p-4">
-                                <h4 class="font-semibold mb-2">Your Brand Online page</h4>
-                                <p class="text-sm text-gray-600">Fuvii gives you a custom brand page where customers can order - dine-in or takeaway. More orders, more reach.</p>
-                            </div>
-                            <div class="p-4 text-center border-l border-gray-200">
-                                <span class="text-fuvii-green text-2xl">✓</span>
-                            </div>
-                            <div class="p-4 text-center border-l border-gray-200">
-                                <span class="text-fuvii-green text-2xl">✓</span>
-                            </div>
-                        </div>
-                        
-                        <div class="grid grid-cols-3 gap-0">
-                            <div class="p-4">
-                                <h4 class="font-semibold mb-2">Smart Upselling with AI</h4>
-                                <p class="text-sm text-gray-600">Fuvii automatically suggests popular add-ons and combos to increase average order value no extra work needed from staff</p>
-                            </div>
-                            <div class="p-4 text-center border-l border-gray-200">
-                                <span class="text-fuvii-green text-2xl">✓</span>
-                            </div>
-                            <div class="p-4 text-center border-l border-gray-200">
-                                <span class="text-fuvii-green text-2xl">✓</span>
-                            </div>
-                        </div>
-                        
-                        <div class="grid grid-cols-3 gap-0">
-                            <div class="p-4">
-                                <h4 class="font-semibold mb-2">Bill Boost Module</h4>
-                                <p class="text-sm text-gray-600">Display special offers at checkout to encourage larger orders and increase revenue per customer</p>
-                            </div>
-                            <div class="p-4 text-center border-l border-gray-200">
-                                <span class="text-fuvii-green text-2xl">✓</span>
-                            </div>
-                            <div class="p-4 text-center border-l border-gray-200">
-                                <span class="text-fuvii-green text-2xl">✓</span>
-                            </div>
-                        </div>
-                        
-                        <div class="grid grid-cols-3 gap-0">
-                            <div class="p-4">
-                                <h4 class="font-semibold mb-2">Loyalty Program</h4>
-                                <p class="text-sm text-gray-600">Reward repeat customers with points, exclusive discounts, and perks. Turn one-time diners into regulars.</p>
-                            </div>
-                            <div class="p-4 text-center border-l border-gray-200">
-                                <span class="text-fuvii-green text-2xl">✓</span>
-                            </div>
-                            <div class="p-4 text-center border-l border-gray-200">
-                                <span class="text-fuvii-green text-2xl">✓</span>
-                            </div>
-                        </div>
-                        
-                        <div class="grid grid-cols-3 gap-0">
-                            <div class="p-4">
-                                <h4 class="font-semibold mb-2">Referral Program</h4>
-                                <p class="text-sm text-gray-600">Let your customers become your promoters. They refer friends you get new diners both get rewarded</p>
-                            </div>
-                            <div class="p-4 text-center border-l border-gray-200">
-                                <span class="text-fuvii-green text-2xl">✓</span>
-                            </div>
-                            <div class="p-4 text-center border-l border-gray-200">
-                                <span class="text-fuvii-green text-2xl">✓</span>
-                            </div>
-                        </div>
-                        
-                        <div class="grid grid-cols-3 gap-0">
-                            <div class="p-4">
-                                <h4 class="font-semibold mb-2">Customer Reports & Insights</h4>
-                                <p class="text-sm text-gray-600">Access detailed data on customer behavior, top-performing items, and campaign effectiveness so you can improve what works and fix what doesn't.</p>
-                            </div>
-                            <div class="p-4 text-center border-l border-gray-200">
-                                <span class="text-fuvii-green text-2xl">✓</span>
-                            </div>
-                            <div class="p-4 text-center border-l border-gray-200">
-                                <span class="text-fuvii-green text-2xl">✓</span>
-                            </div>
-                        </div>
-                        
-                        <div class="grid grid-cols-3 gap-0">
-                            <div class="p-4">
-                                <h4 class="font-semibold mb-2">Customer Reviews</h4>
-                                <p class="text-sm text-gray-600">Get reviews in text, photo, or video and showcase real customer feedback to build trust and attract more walk-ins</p>
-                            </div>
-                            <div class="p-4 text-center border-l border-gray-200">
-                                <span class="text-fuvii-green text-2xl">✓</span>
-                            </div>
-                            <div class="p-4 text-center border-l border-gray-200">
-                                <span class="text-fuvii-green text-2xl">✓</span>
-                            </div>
-                        </div>
-                        
-                        <div class="grid grid-cols-3 gap-0">
-                            <div class="p-4">
-                                <h4 class="font-semibold mb-2">Wait Queue Management</h4>
-                                <p class="text-sm text-gray-600">Don't Just Fill Tables. Manage Crowds Smartly with Fuvii's Wait Queue System</p>
-                            </div>
-                            <div class="p-4 text-center border-l border-gray-200">
-                                <span class="text-fuvii-green text-2xl">✓</span>
-                            </div>
-                            <div class="p-4 text-center border-l border-gray-200">
-                                <span class="text-fuvii-green text-2xl">✓</span>
-                            </div>
-                        </div>
-                        
-                        <div class="grid grid-cols-3 gap-0">
-                            <div class="p-4">
-                                <h4 class="font-semibold mb-2">Feedback Module</h4>
-                                <p class="text-sm text-gray-600">Get genuine feedback (positive or negative). Understand customer needs and keep advancing your business.</p>
-                            </div>
-                            <div class="p-4 text-center border-l border-gray-200">
-                                <span class="text-fuvii-green text-2xl">✓</span>
-                            </div>
-                            <div class="p-4 text-center border-l border-gray-200">
-                                <span class="text-fuvii-green text-2xl">✓</span>
-                            </div>
-                        </div>
-                        
-                        <div class="grid grid-cols-3 gap-0">
-                            <div class="p-4">
-                                <h4 class="font-semibold mb-2">Table Reservation</h4>
-                                <p class="text-sm text-gray-600">Let diners reserve tables in advance and pay a booking amount upfront - auto-deducted the booking fee from the final bill to reduce no-shows and keep your restaurant full.</p>
-                            </div>
-                            <div class="p-4 text-center border-l border-gray-200">
-                                <span class="text-fuvii-green text-2xl">✓</span>
-                            </div>
-                            <div class="p-4 text-center border-l border-gray-200">
-                                <span class="text-fuvii-green text-2xl">✓</span>
-                            </div>
-                        </div>
-                        
-                        <div class="grid grid-cols-3 gap-0">
-                            <div class="p-4">
-                                <h4 class="font-semibold mb-2">Daily Online Settlements</h4>
-                                <p class="text-sm text-gray-600">Get paid directly to your bank account every day</p>
-                            </div>
-                            <div class="p-4 text-center border-l border-gray-200">
-                                <span class="text-fuvii-green text-2xl">✓</span>
-                            </div>
-                            <div class="p-4 text-center border-l border-gray-200">
-                                <span class="text-fuvii-green text-2xl">✓</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="space-y-4">
+          <div class="flex items-start space-x-3">
+            <span class="text-red-500 text-xl font-bold">✗</span>
+            <span class="text-base md:text-lg">No access to customer data</span>
+          </div>
+          <div class="flex items-start space-x-3">
+            <span class="text-red-500 text-xl font-bold">✗</span>
+            <span class="text-base md:text-lg">No way to follow up or build loyalty</span>
+          </div>
+          <div class="flex items-start space-x-3">
+            <span class="text-red-500 text-xl font-bold">✗</span>
+            <span class="text-base md:text-lg">No way to No control over your own success</span>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Final CTA Section -->
-    <section class="bg-white py-12 md:py-16">
-        <div class="container mx-auto px-4">
-            <div class="max-w-4xl mx-auto text-center">
-                <div class="space-y-4 mb-8">
-                    <div class="flex items-center justify-center space-x-3">
-                        <span class="text-fuvii-green text-xl font-bold">✓</span>
-                        <span class="text-lg md:text-xl font-bold text-gray-800">Simple to Set Up. Free to Start.</span>
-                    </div>
-                    <div class="flex items-center justify-center space-x-3">
-                        <span class="text-fuvii-green text-xl font-bold">✓</span>
-                        <span class="text-lg md:text-xl font-bold text-gray-800">No hardware needed</span>
-                    </div>
-                    <div class="flex items-center justify-center space-x-3">
-                        <span class="text-fuvii-green text-xl font-bold">✓</span>
-                        <span class="text-lg md:text-xl font-bold text-gray-800">Onboarding in under 1 day</span>
-                    </div>
-                    <div class="flex items-center justify-center space-x-3">
-                        <span class="text-fuvii-green text-xl font-bold">✓</span>
-                        <span class="text-lg md:text-xl font-bold text-gray-800">We'll help you set up, print QR codes, and go live with your restaurant in hours</span>
-                    </div>
-                </div>
-                
-                <div class="border-2 border-dashed border-gray-400 rounded-lg p-8 mb-8">
-                    <h2 class="text-2xl md:text-3xl font-bold text-fuvii-green mb-4">One Rupee. Total Control. Every Order, Every Channel.</h2>
-                    <h3 class="text-xl md:text-2xl font-bold text-fuvii-green mb-4">Dine-in. Takeaway. Delivery. Fuvii does it all.</h3>
-                    <h4 class="text-lg md:text-xl font-bold text-fuvii-green">The Smartest ₹1 You'll Ever Spend on Your Restaurant</h4>
-                </div>
-                
-                <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8 mb-8">
-                    <div class="flex items-center space-x-3">
-                        <span class="text-2xl">📞</span>
-                        <span class="text-lg">Call us: +91 9176636717</span>
-                    </div>
-                    <div class="flex items-center space-x-3">
-                        <span class="text-2xl">🌐</span>
-                        <span class="text-lg">Visit us: www.fuvii.com</span>
-                    </div>
-                </div>
-                
-                <p class="text-sm text-gray-500 mb-8">*Government taxes, Payment gateway, Delivery charges will be applicable.</p>
-                
-                <button class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-4 px-8 rounded-lg text-xl transition duration-300">
-                    Sign up Now for "FREE"
-                </button>
+  <!-- Problem Section -->
+  <section class="bg-gray-50 py-12 md:py-16">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-8">
+          <p class="text-xl md:text-2xl font-semibold text-gray-800 mb-6">Every time a customer orders through a
+            third-party app,</p>
+
+          <div class="space-y-4">
+            <div class="flex items-center justify-center space-x-3">
+              <span class="text-red-500 text-xl font-bold">✗</span>
+              <span class="text-lg md:text-xl text-fuvii-green font-medium">You're not just losing profit</span>
             </div>
+            <div class="flex items-center justify-center space-x-3">
+              <span class="text-red-500 text-xl font-bold">✗</span>
+              <span class="text-lg md:text-xl text-fuvii-green font-medium">You're losing the relationship</span>
+            </div>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solution Section -->
+  <section class="bg-white py-12 md:py-16">
+    <div class="container mx-auto px-4">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-fuvii-green mb-4">Fuvii changes everything</h2>
+          <p class="text-lg md:text-xl text-gray-700 font-medium">A complete, commission free system built to grow your
+            business - not reduce your profit</p>
+        </div>
+
+        <div class="mb-12">
+          <h3 class="text-2xl md:text-3xl font-bold text-fuvii-green mb-8">With Fuvii, You Get:</h3>
+
+          <div class="grid md:grid-cols-2 gap-6 lg:gap-8">
+            <div class="space-y-6">
+              <div class="flex items-start space-x-4">
+                <span class="text-fuvii-green text-xl font-bold">✓</span>
+                <div>
+                  <h4 class="text-lg md:text-xl font-bold text-gray-800 mb-2">Direct orders</h4>
+                  <p class="text-gray-600">For Dine-in, Takeaway & Delivery - via your website, QR code, and Fuvii app
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start space-x-4">
+                <span class="text-fuvii-green text-xl font-bold">✓</span>
+                <div>
+                  <h4 class="text-lg md:text-xl font-bold text-gray-800 mb-2">Just ₹1 per order</h4>
+                  <p class="text-gray-600">Flat fee, no hidden cuts</p>
+                </div>
+              </div>
+
+              <div class="flex items-start space-x-4">
+                <span class="text-fuvii-green text-xl font-bold">✓</span>
+                <div>
+                  <h4 class="text-lg md:text-xl font-bold text-gray-800 mb-2">Full customer data</h4>
+                  <p class="text-gray-600">Phone numbers, order history, visit patterns</p>
+                </div>
+              </div>
+
+              <div class="flex items-start space-x-4">
+                <span class="text-fuvii-green text-xl font-bold">✓</span>
+                <div>
+                  <h4 class="text-lg md:text-xl font-bold text-gray-800 mb-2">Built-in marketing tools</h4>
+                  <p class="text-gray-600">Send SMS/WhatsApp offers in clicks</p>
+                </div>
+              </div>
+
+              <div class="flex items-start space-x-4">
+                <span class="text-fuvii-green text-xl font-bold">✓</span>
+                <div>
+                  <h4 class="text-lg md:text-xl font-bold text-gray-800 mb-2">Loyalty & Rewards</h4>
+                  <p class="text-gray-600">Turn first-time visitors into regulars</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex items-center justify-center">
+              <div class="border-2 border-dashed border-gray-400 rounded-lg p-6 md:p-8 text-center">
+                <h4 class="text-xl md:text-2xl font-bold text-gray-800 mb-2">The Complete</h4>
+                <h4 class="text-xl md:text-2xl font-bold text-gray-800">₹1 Solution</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-12">
+          <div class="space-y-6">
+            <div class="flex items-start space-x-4">
+              <span class="text-fuvii-green text-xl font-bold">✓</span>
+              <div>
+                <h4 class="text-lg md:text-xl font-bold text-gray-800 mb-2">Referral & Review Engine</h4>
+                <p class="text-gray-600">Drive word of mouth, automatically</p>
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-4">
+              <span class="text-fuvii-green text-xl font-bold">✓</span>
+              <div>
+                <h4 class="text-lg md:text-xl font-bold text-gray-800 mb-2">One Smart Dashboard</h4>
+                <p class="text-gray-600">Manage everything in one place</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mb-8">
+          <h3 class="text-2xl md:text-3xl font-bold text-fuvii-green mb-4">Fuvii isn't just software</h3>
+
+          <div class="grid md:grid-cols-2 gap-4 max-w-4xl mx-auto mb-8">
+            <div class="flex items-center space-x-3">
+              <span class="text-fuvii-green text-xl font-bold">✓</span>
+              <span class="text-lg font-medium text-gray-800">It's your growth engine</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <span class="text-fuvii-green text-xl font-bold">✓</span>
+              <span class="text-lg font-medium text-gray-800">You get the order</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <span class="text-fuvii-green text-xl font-bold">✓</span>
+              <span class="text-lg font-medium text-gray-800">You keep the customer</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <span class="text-fuvii-green text-xl font-bold">✓</span>
+              <span class="text-lg font-medium text-gray-800">You control the journey</span>
+            </div>
+          </div>
+
+          <p class="text-lg md:text-xl text-gray-700 font-medium mb-8">Built for restaurant owners who want more
+            control, more profits, and more return customers</p>
+
+          <button
+            class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-lg text-lg transition duration-300">
+            Sign up Now for "FREE"
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="bg-gray-50 py-12 md:py-16">
+    <div class="container mx-auto px-4">
+      <div class="max-w-6xl mx-auto">
+        <!-- Features Header -->
+        <div class="bg-fuvii-green text-white py-4 px-6 mb-8 transform -skew-x-12">
+          <h2 class="text-xl md:text-2xl font-bold transform skew-x-12">FUVII FEATURES FOR RESTAURANTS</h2>
+        </div>
+
+        <!-- Features Grid -->
+        <div class="grid md:grid-cols-2 gap-6 lg:gap-8 mb-12">
+          <div class="space-y-6">
+            <div class="flex items-start space-x-4">
+              <span class="text-fuvii-green text-xl font-bold">✓</span>
+              <span class="text-lg font-medium text-gray-800">Interactive-Ordering & Checkout</span>
+            </div>
+            <div class="flex items-start space-x-4">
+              <span class="text-fuvii-green text-xl font-bold">✓</span>
+              <span class="text-lg font-medium text-gray-800">Smart Upselling with AI</span>
+            </div>
+            <div class="flex items-start space-x-4">
+              <span class="text-fuvii-green text-xl font-bold">✓</span>
+              <span class="text-lg font-medium text-gray-800">Customer Reports & Insights</span>
+            </div>
+            <div class="flex items-start space-x-4">
+              <span class="text-fuvii-green text-xl font-bold">✓</span>
+              <span class="text-lg font-medium text-gray-800">Your Brand Online Ordering page</span>
+            </div>
+            <div class="flex items-start space-x-4">
+              <span class="text-fuvii-green text-xl font-bold">✓</span>
+              <span class="text-lg font-medium text-gray-800">Referral Program</span>
+            </div>
+            <div class="flex items-start space-x-4">
+              <span class="text-fuvii-green text-xl font-bold">✓</span>
+              <span class="text-lg font-medium text-gray-800">Table Reservation</span>
+            </div>
+            <div class="flex items-start space-x-4">
+              <span class="text-fuvii-green text-xl font-bold">✓</span>
+              <span class="text-lg font-medium text-gray-800">Fuvii for All Order Types</span>
+            </div>
+          </div>
+
+          <div class="space-y-6">
+            <div class="flex items-start space-x-4">
+              <span class="text-fuvii-green text-xl font-bold">✓</span>
+              <span class="text-lg font-medium text-gray-800">SMS & WhatsApp Campaigns</span>
+            </div>
+            <div class="flex items-start space-x-4">
+              <span class="text-fuvii-green text-xl font-bold">✓</span>
+              <span class="text-lg font-medium text-gray-800">Loyalty Program</span>
+            </div>
+            <div class="flex items-start space-x-4">
+              <span class="text-fuvii-green text-xl font-bold">✓</span>
+              <span class="text-lg font-medium text-gray-800">Feedback Module</span>
+            </div>
+            <div class="flex items-start space-x-4">
+              <span class="text-fuvii-green text-xl font-bold">✓</span>
+              <span class="text-lg font-medium text-gray-800">Bill Boost Module</span>
+            </div>
+            <div class="flex items-start space-x-4">
+              <span class="text-fuvii-green text-xl font-bold">✓</span>
+              <span class="text-lg font-medium text-gray-800">Customer Reviews</span>
+            </div>
+            <div class="flex items-start space-x-4">
+              <span class="text-fuvii-green text-xl font-bold">✓</span>
+              <span class="text-lg font-medium text-gray-800">Wait Queue Management</span>
+            </div>
+            <div class="flex items-start space-x-4">
+              <span class="text-fuvii-green text-xl font-bold">✓</span>
+              <span class="text-lg font-medium text-gray-800">Daily Online Settlements</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature Details -->
+        <div class="grid md:grid-cols-2 gap-8 mb-12">
+          <div class="space-y-8">
+            <div>
+              <div class="flex items-start space-x-4 mb-3">
+                <span class="text-fuvii-green text-xl font-bold">✓</span>
+                <h4 class="text-lg md:text-xl font-bold text-gray-800">Interactive-Ordering & Checkout</h4>
+              </div>
+              <p class="text-gray-600 ml-8">Let customers scan your QR code to instantly browse and order from your
+                digital menu. Both staff and customers can add, edit, or remove items in real time.</p>
+            </div>
+
+            <div>
+              <div class="flex items-start space-x-4 mb-3">
+                <span class="text-fuvii-green text-xl font-bold">✓</span>
+                <h4 class="text-lg md:text-xl font-bold text-gray-800">SMS & WhatsApp Campaigns</h4>
+              </div>
+              <p class="text-gray-600 ml-8">Reach your customers directly with proven SMS and WhatsApp marketing tools.
+                Choose from flexible templates that help you bring more customers</p>
+            </div>
+
+            <div>
+              <div class="flex items-start space-x-4 mb-3">
+                <span class="text-fuvii-green text-xl font-bold">✓</span>
+                <h4 class="text-lg md:text-xl font-bold text-gray-800">Smart Upselling with AI</h4>
+              </div>
+              <p class="text-gray-600 ml-8">Fuvii automatically suggests popular add-ons and combos to increase average
+                order value no extra work needed from staff</p>
+            </div>
+          </div>
+
+          <div class="space-y-8">
+            <div>
+              <div class="flex items-start space-x-4 mb-3">
+                <span class="text-fuvii-green text-xl font-bold">✓</span>
+                <h4 class="text-lg md:text-xl font-bold text-gray-800">Fuvii For All Order Types</h4>
+              </div>
+              <p class="text-gray-600 ml-8">Customers can Dine-In, Takeaway, or get Delivery all through Fuvii</p>
+            </div>
+
+            <div>
+              <div class="flex items-start space-x-4 mb-3">
+                <span class="text-fuvii-green text-xl font-bold">✓</span>
+                <h4 class="text-lg md:text-xl font-bold text-gray-800">Your Brand Online page</h4>
+              </div>
+              <p class="text-gray-600 ml-8">Fuvii gives you a custom brand page where customers can order - dine-in or
+                takeaway. More orders, more reach.</p>
+            </div>
+
+            <div>
+              <div class="flex items-start space-x-4 mb-3">
+                <span class="text-fuvii-green text-xl font-bold">✓</span>
+                <h4 class="text-lg md:text-xl font-bold text-gray-800">Bill Boost Module</h4>
+              </div>
+              <p class="text-gray-600 ml-8">Display special offers at checkout to encourage larger orders and increase
+                revenue per customer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QR Demo Section -->
+  <section class="bg-white py-12 md:py-16">
+    <div class="container mx-auto px-4">
+      <div class="max-w-6xl mx-auto">
+        <div class="border-2 border-dashed border-gray-400 rounded-lg p-8 mb-12">
+          <h2 class="text-2xl md:text-3xl font-bold text-fuvii-green text-center mb-8">Try Fuvii for yourself: Scan Demo
+            QR Code</h2>
+
+          <div class="grid md:grid-cols-3 gap-8">
+            <div class="text-center">
+              <div class="border-2 border-fuvii-green rounded-lg p-4 mb-4 inline-block">
+                <div class="w-32 h-32 bg-gray-200 flex items-center justify-center">
+                  <span class="text-xs text-gray-500">QR Code Placeholder</span>
+                </div>
+              </div>
+              <h4 class="text-lg font-semibold text-fuvii-green">Dine-in Table QR</h4>
+            </div>
+
+            <div class="text-center">
+              <div class="border-2 border-fuvii-green rounded-lg p-4 mb-4 inline-block">
+                <div class="w-32 h-32 bg-gray-200 flex items-center justify-center">
+                  <span class="text-xs text-gray-500">QR Code Placeholder</span>
+                </div>
+              </div>
+              <h4 class="text-lg font-semibold text-fuvii-green">Takeout / Delivery QR</h4>
+            </div>
+
+            <div class="text-center">
+              <div class="border-2 border-fuvii-green rounded-lg p-4 mb-4 inline-block">
+                <div class="w-32 h-32 bg-gray-200 flex items-center justify-center">
+                  <span class="text-xs text-gray-500">QR Code Placeholder</span>
+                </div>
+              </div>
+              <h4 class="text-lg font-semibold text-fuvii-green">Store Page QR</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="bg-gray-900 text-white py-12 md:py-16">
+    <div class="container mx-auto px-4">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-2xl md:text-3xl font-bold text-center mb-8">Pricing: Small Cost. Big Features. No Risk.</h2>
+
+        <div class="grid md:grid-cols-2 gap-0 mb-8">
+          <div class="bg-fuvii-green p-6 md:p-8">
+            <h3 class="text-2xl md:text-3xl font-bold mb-4">Free plan ₹0</h3>
+            <p class="text-lg mb-2">The restaurant pays <span class="font-bold">zero platform fee</span>. Platform fee
+              of</p>
+            <p class="text-lg">₹1 per order is paid by the customer/diner</p>
+          </div>
+
+          <div class="bg-fuvii-dark-green p-6 md:p-8">
+            <h3 class="text-2xl md:text-3xl font-bold mb-4">Paid plan ₹1 / order</h3>
+            <p class="text-lg mb-2">Restaurant pays the platform fee of ₹1 per order. No</p>
+            <p class="text-lg">charges for Customers / diner</p>
+          </div>
+        </div>
+
+        <!-- Features Comparison Table -->
+        <div class="bg-white text-gray-800 rounded-lg overflow-hidden">
+          <div class="grid grid-cols-3 gap-0">
+            <div class="p-4 font-bold border-b border-gray-200">Features</div>
+            <div class="p-4 font-bold text-center border-b border-l border-gray-200">Free plan ₹0</div>
+            <div class="p-4 font-bold text-center border-b border-l border-gray-200">Paid plan ₹1 / order</div>
+          </div>
+
+          <div class="divide-y divide-gray-200">
+            <div class="grid grid-cols-3 gap-0">
+              <div class="p-4">
+                <h4 class="font-semibold mb-2">Interactive-Ordering & Checkout</h4>
+                <p class="text-sm text-gray-600">Let customers scan your QR code to instantly browse and order from your
+                  digital menu. Both staff and customers can add, edit, or remove items in real time.</p>
+              </div>
+              <div class="p-4 text-center border-l border-gray-200">
+                <span class="text-fuvii-green text-2xl">✓</span>
+              </div>
+              <div class="p-4 text-center border-l border-gray-200">
+                <span class="text-fuvii-green text-2xl">✓</span>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-3 gap-0">
+              <div class="p-4">
+                <h4 class="font-semibold mb-2">Fuvii For All Order Types</h4>
+                <p class="text-sm text-gray-600">Customers can Dine-In, Takeaway, or get Delivery all through Fuvii</p>
+              </div>
+              <div class="p-4 text-center border-l border-gray-200">
+                <span class="text-fuvii-green text-2xl">✓</span>
+              </div>
+              <div class="p-4 text-center border-l border-gray-200">
+                <span class="text-fuvii-green text-2xl">✓</span>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-3 gap-0">
+              <div class="p-4">
+                <h4 class="font-semibold mb-2">SMS & WhatsApp Campaigns</h4>
+                <p class="text-sm text-gray-600">Reach your customers directly with proven SMS and WhatsApp marketing
+                  tools. Choose from flexible templates that help you bring more customers</p>
+              </div>
+              <div class="p-4 text-center border-l border-gray-200">
+                <span class="text-fuvii-green text-2xl">✓</span>
+              </div>
+              <div class="p-4 text-center border-l border-gray-200">
+                <span class="text-fuvii-green text-2xl">✓</span>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-3 gap-0">
+              <div class="p-4">
+                <h4 class="font-semibold mb-2">Your Brand Online page</h4>
+                <p class="text-sm text-gray-600">Fuvii gives you a custom brand page where customers can order - dine-in
+                  or takeaway. More orders, more reach.</p>
+              </div>
+              <div class="p-4 text-center border-l border-gray-200">
+                <span class="text-fuvii-green text-2xl">✓</span>
+              </div>
+              <div class="p-4 text-center border-l border-gray-200">
+                <span class="text-fuvii-green text-2xl">✓</span>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-3 gap-0">
+              <div class="p-4">
+                <h4 class="font-semibold mb-2">Smart Upselling with AI</h4>
+                <p class="text-sm text-gray-600">Fuvii automatically suggests popular add-ons and combos to increase
+                  average order value no extra work needed from staff</p>
+              </div>
+              <div class="p-4 text-center border-l border-gray-200">
+                <span class="text-fuvii-green text-2xl">✓</span>
+              </div>
+              <div class="p-4 text-center border-l border-gray-200">
+                <span class="text-fuvii-green text-2xl">✓</span>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-3 gap-0">
+              <div class="p-4">
+                <h4 class="font-semibold mb-2">Bill Boost Module</h4>
+                <p class="text-sm text-gray-600">Display special offers at checkout to encourage larger orders and
+                  increase revenue per customer</p>
+              </div>
+              <div class="p-4 text-center border-l border-gray-200">
+                <span class="text-fuvii-green text-2xl">✓</span>
+              </div>
+              <div class="p-4 text-center border-l border-gray-200">
+                <span class="text-fuvii-green text-2xl">✓</span>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-3 gap-0">
+              <div class="p-4">
+                <h4 class="font-semibold mb-2">Loyalty Program</h4>
+                <p class="text-sm text-gray-600">Reward repeat customers with points, exclusive discounts, and perks.
+                  Turn one-time diners into regulars.</p>
+              </div>
+              <div class="p-4 text-center border-l border-gray-200">
+                <span class="text-fuvii-green text-2xl">✓</span>
+              </div>
+              <div class="p-4 text-center border-l border-gray-200">
+                <span class="text-fuvii-green text-2xl">✓</span>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-3 gap-0">
+              <div class="p-4">
+                <h4 class="font-semibold mb-2">Referral Program</h4>
+                <p class="text-sm text-gray-600">Let your customers become your promoters. They refer friends you get
+                  new diners both get rewarded</p>
+              </div>
+              <div class="p-4 text-center border-l border-gray-200">
+                <span class="text-fuvii-green text-2xl">✓</span>
+              </div>
+              <div class="p-4 text-center border-l border-gray-200">
+                <span class="text-fuvii-green text-2xl">✓</span>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-3 gap-0">
+              <div class="p-4">
+                <h4 class="font-semibold mb-2">Customer Reports & Insights</h4>
+                <p class="text-sm text-gray-600">Access detailed data on customer behavior, top-performing items, and
+                  campaign effectiveness so you can improve what works and fix what doesn't.</p>
+              </div>
+              <div class="p-4 text-center border-l border-gray-200">
+                <span class="text-fuvii-green text-2xl">✓</span>
+              </div>
+              <div class="p-4 text-center border-l border-gray-200">
+                <span class="text-fuvii-green text-2xl">✓</span>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-3 gap-0">
+              <div class="p-4">
+                <h4 class="font-semibold mb-2">Customer Reviews</h4>
+                <p class="text-sm text-gray-600">Get reviews in text, photo, or video and showcase real customer
+                  feedback to build trust and attract more walk-ins</p>
+              </div>
+              <div class="p-4 text-center border-l border-gray-200">
+                <span class="text-fuvii-green text-2xl">✓</span>
+              </div>
+              <div class="p-4 text-center border-l border-gray-200">
+                <span class="text-fuvii-green text-2xl">✓</span>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-3 gap-0">
+              <div class="p-4">
+                <h4 class="font-semibold mb-2">Wait Queue Management</h4>
+                <p class="text-sm text-gray-600">Don't Just Fill Tables. Manage Crowds Smartly with Fuvii's Wait Queue
+                  System</p>
+              </div>
+              <div class="p-4 text-center border-l border-gray-200">
+                <span class="text-fuvii-green text-2xl">✓</span>
+              </div>
+              <div class="p-4 text-center border-l border-gray-200">
+                <span class="text-fuvii-green text-2xl">✓</span>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-3 gap-0">
+              <div class="p-4">
+                <h4 class="font-semibold mb-2">Feedback Module</h4>
+                <p class="text-sm text-gray-600">Get genuine feedback (positive or negative). Understand customer needs
+                  and keep advancing your business.</p>
+              </div>
+              <div class="p-4 text-center border-l border-gray-200">
+                <span class="text-fuvii-green text-2xl">✓</span>
+              </div>
+              <div class="p-4 text-center border-l border-gray-200">
+                <span class="text-fuvii-green text-2xl">✓</span>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-3 gap-0">
+              <div class="p-4">
+                <h4 class="font-semibold mb-2">Table Reservation</h4>
+                <p class="text-sm text-gray-600">Let diners reserve tables in advance and pay a booking amount upfront -
+                  auto-deducted the booking fee from the final bill to reduce no-shows and keep your restaurant full.
+                </p>
+              </div>
+              <div class="p-4 text-center border-l border-gray-200">
+                <span class="text-fuvii-green text-2xl">✓</span>
+              </div>
+              <div class="p-4 text-center border-l border-gray-200">
+                <span class="text-fuvii-green text-2xl">✓</span>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-3 gap-0">
+              <div class="p-4">
+                <h4 class="font-semibold mb-2">Daily Online Settlements</h4>
+                <p class="text-sm text-gray-600">Get paid directly to your bank account every day</p>
+              </div>
+              <div class="p-4 text-center border-l border-gray-200">
+                <span class="text-fuvii-green text-2xl">✓</span>
+              </div>
+              <div class="p-4 text-center border-l border-gray-200">
+                <span class="text-fuvii-green text-2xl">✓</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA Section -->
+  <section class="bg-white py-12 md:py-16">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto text-center">
+        <div class="space-y-4 mb-8">
+          <div class="flex items-center justify-center space-x-3">
+            <span class="text-fuvii-green text-xl font-bold">✓</span>
+            <span class="text-lg md:text-xl font-bold text-gray-800">Simple to Set Up. Free to Start.</span>
+          </div>
+          <div class="flex items-center justify-center space-x-3">
+            <span class="text-fuvii-green text-xl font-bold">✓</span>
+            <span class="text-lg md:text-xl font-bold text-gray-800">No hardware needed</span>
+          </div>
+          <div class="flex items-center justify-center space-x-3">
+            <span class="text-fuvii-green text-xl font-bold">✓</span>
+            <span class="text-lg md:text-xl font-bold text-gray-800">Onboarding in under 1 day</span>
+          </div>
+          <div class="flex items-center justify-center space-x-3">
+            <span class="text-fuvii-green text-xl font-bold">✓</span>
+            <span class="text-lg md:text-xl font-bold text-gray-800">We'll help you set up, print QR codes, and go live
+              with your restaurant in hours</span>
+          </div>
+        </div>
+
+        <div class="border-2 border-dashed border-gray-400 rounded-lg p-8 mb-8">
+          <h2 class="text-2xl md:text-3xl font-bold text-fuvii-green mb-4">One Rupee. Total Control. Every Order, Every
+            Channel.</h2>
+          <h3 class="text-xl md:text-2xl font-bold text-fuvii-green mb-4">Dine-in. Takeaway. Delivery. Fuvii does it
+            all.</h3>
+          <h4 class="text-lg md:text-xl font-bold text-fuvii-green">The Smartest ₹1 You'll Ever Spend on Your Restaurant
+          </h4>
+        </div>
+
+        <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8 mb-8">
+          <div class="flex items-center space-x-3">
+            <span class="text-2xl">📞</span>
+            <span class="text-lg">Call us: +91 9176636717</span>
+          </div>
+          <div class="flex items-center space-x-3">
+            <span class="text-2xl">🌐</span>
+            <span class="text-lg">Visit us: www.fuvii.com</span>
+          </div>
+        </div>
+
+        <p class="text-sm text-gray-500 mb-8">*Government taxes, Payment gateway, Delivery charges will be applicable.
+        </p>
+
+        <button onclick="openSignupModal()"
+          class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-4 px-8 rounded-lg text-xl transition duration-300">
+          Sign up Now for "FREE"
+        </button>
+      </div>
+    </div>
+  </section>
+  <!-- Signup Modal -->
+  <div id="signupModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-lg max-w-md w-full max-h-[90vh] overflow-y-auto">
+      <div class="p-6">
+        <div class="flex justify-between items-center mb-6">
+          <h2 class="text-2xl font-bold text-gray-800">Sign Up for FREE</h2>
+          <button onclick="closeSignupModal()" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
+        </div>
+
+        <form id="signupForm" class="space-y-4">
+          <input type="hidden" id="timestamp" name="timestamp">
+
+          <div>
+            <label for="fullName" class="block text-sm font-medium text-gray-700 mb-1">Full Name *</label>
+            <input type="text" id="fullName" name="fullName" required
+              class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-fuvii-green focus:border-transparent">
+          </div>
+
+          <div>
+            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email *</label>
+            <input type="email" id="email" name="email" required
+              class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-fuvii-green focus:border-transparent">
+          </div>
+
+          <div>
+            <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number *</label>
+            <input type="tel" id="phone" name="phone" required
+              class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-fuvii-green focus:border-transparent">
+          </div>
+
+          <div>
+            <label for="location" class="block text-sm font-medium text-gray-700 mb-1">Location *</label>
+            <input type="text" id="location" name="location" required
+              class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-fuvii-green focus:border-transparent">
+          </div>
+
+          <div class="flex items-start space-x-3">
+            <input type="checkbox" id="termsCheckbox" name="termsCheckbox" required
+              class="mt-1 h-4 w-4 text-fuvii-green focus:ring-fuvii-green border-gray-300 rounded">
+            <label for="termsCheckbox" class="text-sm text-gray-700">
+              I agree that *Government taxes, Payment gateway, Delivery charges will be applicable.
+            </label>
+          </div>
+
+          <button type="submit"
+            class="w-full bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-4 rounded-md transition duration-300">
+            Sign Up Now
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>
