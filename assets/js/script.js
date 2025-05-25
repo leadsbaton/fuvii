@@ -83,6 +83,13 @@ Click OK to proceed.`
         showDialog("Registration successful! We'll contact you soon.");
         alert('Thank you for signing up! We will get in touch with you shortly.');
         form.reset();
+        // Trigger file download
+        const link = document.createElement("a");
+        link.href = "https://leadsbaton.github.io/fuvii/assets/pdf/fuvii_1.pdf";
+        link.download = "Ebook1.pdf";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
         closeSignupModal();
       })
       .catch((error) => {
