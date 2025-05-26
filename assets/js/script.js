@@ -148,21 +148,27 @@ window.onload = function () {
     e.preventDefault();
 
     const fullName = document.getElementById("fullName").value.trim();
-    const email = document.getElementById("email").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const termsAccepted = document.getElementById("termsCheckbox").checked;
 
-    const isValidEmail = /\S+@\S+\.\S+/.test(email);
+    const isValidPhone = /^[0-9]{10,11}$/.test(phone);
 
-    if (!fullName || !email) {
+    if (!fullName || !phone) {
       showDialog("Please fill in all required fields.", false);
       return;
     }
 
-    if (!isValidEmail) {
-      showDialog("Invalid email address.", false);
+    if (!isValidPhone) {
+      showDialog("Phone number must be 10 or 11 digits.", false);
       return;
     }
 
-    const confirmation = confirm(`Please confirm your details:\n\nFull Name: ${fullName}\nEmail: ${email}`);
+    if (!termsAccepted) {
+      showDialog("Please accept the terms and conditions.", false);
+      return;
+    }
+
+    const confirmation = confirm(`Please confirm your details:\n\nFull Name: ${fullName}\nPhone: ${phone}`);
     if (!confirmation) return;
 
     timestampInput.value = new Date().toLocaleString();
